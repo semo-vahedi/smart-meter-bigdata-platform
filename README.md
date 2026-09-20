@@ -1,4 +1,4 @@
-\# Smart Meter Big Data Platform
+# Smart Meter Big Data Platform
 
 ## Datasets
 
@@ -127,7 +127,7 @@ The implemented pipeline includes:
 
 
 
-\### Energy Demand Forecasting
+### Energy Demand Forecasting
 
 
 
@@ -159,7 +159,7 @@ Target:
 
 
 
-\### Household Consumption Anomaly Detection
+### Household Consumption Anomaly Detection
 
 
 
@@ -247,7 +247,7 @@ Two mandatory performance experiments were executed using measured results.
 
 
 
-\### Data Volume Experiment
+### Data Volume Experiment
 
 
 
