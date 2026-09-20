@@ -1,0 +1,65 @@
+# ============================================================
+# Smart Meter Big Data Platform
+# Files intentionally excluded from Git/GitHub
+# ============================================================
+
+# --- Large datasets and generated data ---
+*.parquet
+*.parquet.crc
+*.csv.gz
+*.zip
+*.7z
+*.tar
+*.gz
+
+# --- Spark generated files ---
+_SUCCESS
+*.crc
+.sparkStaging/
+spark-warehouse/
+metastore_db/
+
+# --- Spark checkpoints and streaming state ---
+checkpoints/
+checkpoint/
+**/checkpoints/
+**/checkpoint/
+
+# --- Logs and temporary files ---
+logs/
+*.log
+tmp/
+temp/
+*.tmp
+
+# --- Python cache / environments ---
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+.env
+
+# --- Credentials / secrets ---
+*.pem
+*.key
+credentials.json
+secrets.json
+
+# --- IDE / operating system files ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Large local AI-ready datasets ---
+data/processed/
+data/raw/
+data/full/
+data/anomaly_detection/
+data/forecasting/
+
+# --- Local runtime artifacts ---
+streaming_staging/

@@ -1,0 +1,16 @@
+{
+    "method": "chronological",
+    "random_split": false,
+    "ratios": {
+        "train": 0.7,
+        "validation": 0.15,
+        "test": 0.15
+    },
+    "common_start": "2011-11-23 09:00:00",
+    "train_end_exclusive": "2013-06-24 17:00:00",
+    "validation_start_inclusive": "2013-06-24 17:00:00",
+    "validation_end_exclusive": "2013-10-26 20:00:00",
+    "test_start_inclusive": "2013-10-26 20:00:00",
+    "common_end": "2014-02-28 00:00:00",
+    "policy": "Temporal split only. No random shuffling is permitted."
+}

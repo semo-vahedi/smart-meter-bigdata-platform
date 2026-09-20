@@ -1,0 +1,137 @@
+{
+    "package_name": "Smart Meter Big Data Processing - Phase 2",
+    "created_at": "2026-09-19T21:15:34",
+    "contract": {
+        "phase": "Phase 2 - Application of Big Data Processing",
+        "pipeline": "Historical Files -> Python Replay Producer -> Kafka Topic -> Spark Structured Streaming -> Processed Storage",
+        "historical_stream_policy": "Historical smart-meter observations replayed as a simulated real-time data stream.",
+        "processing_runtime": "WSL2 / Ubuntu",
+        "storage_model": "Project data and outputs stored on mounted Windows E: drive",
+        "forecasting_output": "/mnt/e/smart-meter-bigdata-project/data/processed/forecasting/ai_ready",
+        "anomaly_detection_output": "/mnt/e/smart-meter-bigdata-project/data/processed/anomaly_detection/ai_ready",
+        "temporal_split_contract": "/mnt/e/smart-meter-bigdata-project/data/processed/temporal_split_contract.json",
+        "forecasting_records": 19862,
+        "anomaly_records": 167811461,
+        "distinct_households": 5561,
+        "output_format": "Parquet",
+        "temporal_split": "chronological",
+        "random_temporal_split_used": false,
+        "future_leakage_permitted": false,
+        "synthetic_performance_numbers_used": false,
+        "mandatory_volume_experiment_complete": true,
+        "mandatory_replay_rate_experiment_complete": true,
+        "highest_measured_streaming_rate_records_per_second": 712.45,
+        "phase3_raw_dataset_required": false,
+        "phase3_feature_engineering_repeat_required": false,
+        "core_artifacts_complete": true,
+        "visualization_package_complete": true
+    },
+    "required_artifacts": {
+        "forecasting_ai_ready": {
+            "path": "/mnt/e/smart-meter-bigdata-project/data/processed/forecasting/ai_ready",
+            "available": true
+        },
+        "anomaly_ai_ready": {
+            "path": "/mnt/e/smart-meter-bigdata-project/data/processed/anomaly_detection/ai_ready",
+            "available": true
+        },
+        "temporal_split_contract": {
+            "path": "/mnt/e/smart-meter-bigdata-project/data/processed/temporal_split_contract.json",
+            "available": true
+        },
+        "replay_manifest": {
+            "path": "/mnt/e/smart-meter-bigdata-project/data/replay/replay_manifest.csv",
+            "available": true
+        },
+        "replay_producer": {
+            "path": "/mnt/e/smart-meter-bigdata-project/producer/replay_producer.py",
+            "available": true
+        },
+        "performance_framework": {
+            "path": "/mnt/e/smart-meter-bigdata-project/results/performance_measurement_framework.json",
+            "available": true
+        },
+        "volume_experiment": {
+            "path": "/mnt/e/smart-meter-bigdata-project/results/volume_experiment_results.json",
+            "available": true
+        },
+        "volume_analysis": {
+            "path": "/mnt/e/smart-meter-bigdata-project/results/volume_analysis.json",
+            "available": true
+        },
+        "replay_rate_experiment": {
+            "path": "/mnt/e/smart-meter-bigdata-project/results/replay_rate_experiment_results.json",
+            "available": true
+        },
+        "streaming_performance_analysis": {
+            "path": "/mnt/e/smart-meter-bigdata-project/results/streaming_performance_analysis.json",
+            "available": true
+        },
+        "feasibility_gate": {
+            "path": "/mnt/e/smart-meter-bigdata-project/results/feasibility_gate.json",
+            "available": true
+        },
+        "evidence_manifest": {
+            "path": "/mnt/e/smart-meter-bigdata-project/results/evidence/evidence_manifest.json",
+            "available": true
+        },
+        "evidence_inventory": {
+            "path": "/mnt/e/smart-meter-bigdata-project/results/evidence/evidence_inventory.csv",
+            "available": true
+        }
+    },
+    "visualization_artifacts": {
+        "figure_01_volume_throughput.png": {
+            "path": "/mnt/e/smart-meter-bigdata-project/results/visualizations/figure_01_volume_throughput.png",
+            "available": true
+        },
+        "figure_01_volume_throughput.pdf": {
+            "path": "/mnt/e/smart-meter-bigdata-project/results/visualizations/figure_01_volume_throughput.pdf",
+            "available": true
+        },
+        "figure_02_volume_execution_time.png": {
+            "path": "/mnt/e/smart-meter-bigdata-project/results/visualizations/figure_02_volume_execution_time.png",
+            "available": true
+        },
+        "figure_02_volume_execution_time.pdf": {
+            "path": "/mnt/e/smart-meter-bigdata-project/results/visualizations/figure_02_volume_execution_time.pdf",
+            "available": true
+        },
+        "figure_03_replay_rate_performance.png": {
+            "path": "/mnt/e/smart-meter-bigdata-project/results/visualizations/figure_03_replay_rate_performance.png",
+            "available": true
+        },
+        "figure_03_replay_rate_performance.pdf": {
+            "path": "/mnt/e/smart-meter-bigdata-project/results/visualizations/figure_03_replay_rate_performance.pdf",
+            "available": true
+        },
+        "figure_04_streaming_efficiency.png": {
+            "path": "/mnt/e/smart-meter-bigdata-project/results/visualizations/figure_04_streaming_efficiency.png",
+            "available": true
+        },
+        "figure_04_streaming_efficiency.pdf": {
+            "path": "/mnt/e/smart-meter-bigdata-project/results/visualizations/figure_04_streaming_efficiency.pdf",
+            "available": true
+        },
+        "figure_05_experimental_summary.png": {
+            "path": "/mnt/e/smart-meter-bigdata-project/results/visualizations/figure_05_experimental_summary.png",
+            "available": true
+        },
+        "figure_05_experimental_summary.pdf": {
+            "path": "/mnt/e/smart-meter-bigdata-project/results/visualizations/figure_05_experimental_summary.pdf",
+            "available": true
+        },
+        "volume_experiment_plot_data.csv": {
+            "path": "/mnt/e/smart-meter-bigdata-project/results/visualizations/volume_experiment_plot_data.csv",
+            "available": true
+        },
+        "replay_rate_plot_data.csv": {
+            "path": "/mnt/e/smart-meter-bigdata-project/results/visualizations/replay_rate_plot_data.csv",
+            "available": true
+        },
+        "final_results_summary.csv": {
+            "path": "/mnt/e/smart-meter-bigdata-project/results/visualizations/final_results_summary.csv",
+            "available": true
+        }
+    }
+}

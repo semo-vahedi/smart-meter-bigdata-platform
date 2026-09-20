@@ -1,0 +1,45 @@
+{
+    "stage": "Stage 12 - Research Experiments",
+    "measurement_policy": {
+        "use_measured_values_only": true,
+        "synthetic_performance_numbers": false,
+        "same_metric_definitions_across_runs": true
+    },
+    "volume_experiment": {
+        "required": true,
+        "independent_variable": "input_data_volume",
+        "metrics": [
+            "input_records",
+            "elapsed_seconds",
+            "throughput_records_per_second",
+            "execution_status"
+        ],
+        "throughput_formula": "input_records / elapsed_seconds"
+    },
+    "replay_rate_experiment": {
+        "required": true,
+        "independent_variable": "producer_replay_rate",
+        "metrics": [
+            "requested_replay_rate",
+            "records_sent",
+            "producer_elapsed_seconds",
+            "producer_throughput_records_per_second",
+            "records_processed",
+            "stream_processing_elapsed_seconds",
+            "stream_processing_throughput_records_per_second",
+            "execution_status"
+        ]
+    },
+    "spark_configuration_experiment": {
+        "required": false,
+        "condition": "Run only if a meaningful and reproducible Spark configuration comparison is justified."
+    },
+    "execution_rules": [
+        "Use real execution measurements only.",
+        "Do not invent or estimate performance results.",
+        "Keep metric definitions consistent across runs.",
+        "Record failed runs as experimental evidence.",
+        "Preserve the tested configuration for reproducibility.",
+        "Do not modify the Phase 2 AI-ready datasets."
+    ]
+}

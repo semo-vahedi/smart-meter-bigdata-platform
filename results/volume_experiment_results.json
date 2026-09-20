@@ -1,0 +1,29 @@
+{
+    "experiment": "Data Volume Experiment",
+    "independent_variable": "input_data_volume",
+    "source": "/mnt/e/smart-meter-bigdata-project/data/processed/anomaly_detection/ai_ready",
+    "workload": "Fixed aggregation over energy_kwh: count, sum, mean, minimum and maximum.",
+    "results": [
+        {
+            "requested_records": 1000000,
+            "input_records": 1000000,
+            "elapsed_seconds": 9.557920159999412,
+            "throughput_records_per_second": 104625.27236679298,
+            "execution_status": "SUCCESS"
+        },
+        {
+            "requested_records": 5000000,
+            "input_records": 5000000,
+            "elapsed_seconds": 10.36318152200056,
+            "throughput_records_per_second": 482477.31542530924,
+            "execution_status": "SUCCESS"
+        },
+        {
+            "requested_records": 10000000,
+            "input_records": 10000000,
+            "elapsed_seconds": 10.733393292000073,
+            "throughput_records_per_second": 931671.8141180298,
+            "execution_status": "SUCCESS"
+        }
+    ]
+}

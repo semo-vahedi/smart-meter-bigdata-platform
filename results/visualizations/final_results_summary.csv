@@ -1,0 +1,9 @@
+metric,value,unit
+Forecasting AI-ready records,19862.0,records
+Anomaly AI-ready records,167811461.0,records
+Distinct households,5561.0,households
+Highest tested volume,10000000.0,records
+Highest volume throughput,931671.81,records/second
+Highest measured producer rate,745.8,records/second
+Highest measured streaming rate,712.45,records/second
+Replay delivery ratio,100.0,percent

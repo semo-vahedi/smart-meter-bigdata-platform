@@ -1,0 +1,41 @@
+{
+    "analysis": "Data Volume Analysis",
+    "source_results": "/mnt/e/smart-meter-bigdata-project/results/volume_experiment_results.json",
+    "successful_runs": 3,
+    "smallest_test": {
+        "records": 1000000,
+        "elapsed_seconds": 9.557920159999412,
+        "throughput_records_per_second": 104625.27236679298
+    },
+    "largest_test": {
+        "records": 10000000,
+        "elapsed_seconds": 10.733393292000073,
+        "throughput_records_per_second": 931671.8141180298
+    },
+    "overall_comparison": {
+        "input_volume_factor": 10.0,
+        "execution_time_factor": 1.1229841965954164,
+        "throughput_factor": 8.904844814661942,
+        "elapsed_time_increase_percent": 12.298419659541636,
+        "throughput_increase_percent": 790.4844814661941
+    },
+    "pairwise_comparison": [
+        {
+            "from_records": 1000000,
+            "to_records": 5000000,
+            "volume_factor": 5.0,
+            "time_factor": 1.0842506893258246,
+            "throughput_factor": 4.611479659845958
+        },
+        {
+            "from_records": 5000000,
+            "to_records": 10000000,
+            "volume_factor": 2.0,
+            "time_factor": 1.0357237561856436,
+            "throughput_factor": 1.9310168257273412
+        }
+    ],
+    "observed_pattern": "Processing throughput increased as the tested input volume increased, while execution time grew much more slowly than the input volume.",
+    "interpretation": "The measured workload shows a substantial fixed-cost component at the tested scales. Larger inputs use the available Spark processing capacity more efficiently, so the fixed execution overhead is amortized across more records. This interpretation applies only to the tested volumes and configuration.",
+    "scope_note": "Conclusions are limited to the measured 1M, 5M, and 10M record workloads and the current Spark configuration."
+}

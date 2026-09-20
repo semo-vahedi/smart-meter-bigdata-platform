@@ -1,0 +1,4 @@
+requested_rate,producer_rate,streaming_rate,delivery_percent,producer_efficiency_percent,streaming_efficiency_percent,producer_to_spark_gap_percent
+100,96.25,95.64,100.0,96.25,95.64,0.6337662337662332
+500,435.87,424.22,100.0,87.17399999999999,84.84400000000001,2.6728152889623003
+1000,745.8,712.45,100.0,74.57999999999998,71.245,4.471708232770168

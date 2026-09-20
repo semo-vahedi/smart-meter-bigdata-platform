@@ -1,0 +1,52 @@
+{
+    "experiment": "Replay Rate Experiment",
+    "independent_variable": "producer_replay_rate",
+    "fixed_records_per_run": 10000,
+    "kafka_bootstrap_server": "192.168.32.1:9092",
+    "topic": "smart-meter-readings",
+    "producer": "/mnt/e/smart-meter-bigdata-project/producer/replay_producer.py",
+    "results": [
+        {
+            "run": 1,
+            "requested_replay_rate": 100,
+            "replay_delay_seconds": 0.01,
+            "requested_records": 10000,
+            "records_sent": 10000,
+            "producer_elapsed_seconds": 103.89707771999929,
+            "producer_throughput_records_per_second": 96.2490978519128,
+            "records_processed": 10000,
+            "stream_processing_elapsed_seconds": 104.56338640000013,
+            "stream_processing_throughput_records_per_second": 95.63577026613962,
+            "complete_delivery": true,
+            "execution_status": "SUCCESS"
+        },
+        {
+            "run": 2,
+            "requested_replay_rate": 500,
+            "replay_delay_seconds": 0.002,
+            "requested_records": 10000,
+            "records_sent": 10000,
+            "producer_elapsed_seconds": 22.942699045000154,
+            "producer_throughput_records_per_second": 435.86850790248565,
+            "records_processed": 10000,
+            "stream_processing_elapsed_seconds": 23.572700053000517,
+            "stream_processing_throughput_records_per_second": 424.21954114361716,
+            "complete_delivery": true,
+            "execution_status": "SUCCESS"
+        },
+        {
+            "run": 3,
+            "requested_replay_rate": 1000,
+            "replay_delay_seconds": 0.001,
+            "requested_records": 10000,
+            "records_sent": 10000,
+            "producer_elapsed_seconds": 13.408493384000394,
+            "producer_throughput_records_per_second": 745.7959454216117,
+            "records_processed": 10000,
+            "stream_processing_elapsed_seconds": 14.036143651000202,
+            "stream_processing_throughput_records_per_second": 712.4463989998712,
+            "complete_delivery": true,
+            "execution_status": "SUCCESS"
+        }
+    ]
+}

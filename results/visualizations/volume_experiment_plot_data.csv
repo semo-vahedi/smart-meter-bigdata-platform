@@ -1,0 +1,4 @@
+input_records,elapsed_seconds,throughput_records_per_second
+1000000,9.558,104625.27
+5000000,10.363,482477.32
+10000000,10.733,931671.81
