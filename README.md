@@ -315,10 +315,6 @@ smart-meter-bigdata-platform/
 
 │   └── temporal\_split\_contract.json
 
-├── phase3/
-
-├── spark/
-
 ├── .gitignore
 
 └── README.md
