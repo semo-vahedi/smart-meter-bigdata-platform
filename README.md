@@ -263,7 +263,7 @@ Two mandatory performance experiments were executed using measured results.
 
 
 
-\### Replay Rate Experiment
+### Replay Rate Experiment
 
 
 
